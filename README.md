@@ -10,3 +10,7 @@ The alternative rock paper scissors game written in Javascript. Weapons in this 
 Rules: [a link](http://markarayner.com/blog/archives/1613)
 
 
+
+
+paper beats rock beats scissors beats paper
+monkey beats ninja beats pirate beats monkey
