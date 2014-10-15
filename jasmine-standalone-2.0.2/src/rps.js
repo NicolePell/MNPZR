@@ -1,6 +1,11 @@
-function Paper () {
+function Monkey () {
 
-this.type = 'paper'
+this.type = 'monkey'
 
 };
 
+function Ninja () {
+
+this.type = 'ninja'
+
+};

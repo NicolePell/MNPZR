@@ -1,14 +1,22 @@
 describe('Rock Paper Scissors', function () {
 
 
-  describe('weapons', function () {
+  describe('warriors', function () {
 
-          it('paper', function () {
+      it('monkey', function () {
             
-              paper = new Paper
-              expect(paper.type).toEqual('paper');
+	  	monkey = new Monkey
+    	expect(monkey.type).toEqual('monkey');
 
-          });
+      });
+
+      it('ninja', function () {
+
+    	ninja = new Ninja
+    	expect(ninja.type).toEqual('ninja');
+      
+      });
 
   });
+  
 });
