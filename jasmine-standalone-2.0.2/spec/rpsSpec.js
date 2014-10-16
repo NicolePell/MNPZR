@@ -30,38 +30,55 @@ describe('Monkey Ninja Pirate', function () {
 
     beforeEach(function () {
           rules = new Rules
+          monkey = new Monkey
+          pirate = new Pirate
+          ninja = new Ninja;
 
     });
 
- 
 
-  it('monkey fools ninja', function () {
-    monkey = new Monkey
-    expect(monkey.versus(ninja)).toBe('monkey')
-  });
+      it('monkey fools ninja', function () {
+        expect(monkey.versus(ninja)).toBe('monkey')
+      });
 
-  it('monkey is skewered by pirate', function () {
-    monkey = new Monkey
-    pirate = new Pirate
-    expect(monkey.versus(pirate)).toBe('pirate')
-  });
+      it('monkey is skewered by pirate', function () {
+        expect(monkey.versus(pirate)).toBe('pirate')
+      });
 
-  it('ninja karate chops pirate', function () {
+      it('ninja karate chops pirate', function () {
+        expect(ninja.versus(pirate)).toBe('ninja')
 
-    ninja = new Ninja
-    pirate = new Pirate
-    expect(ninja.versus(pirate)).toBe('ninja')
+      });
 
-  });
+      it('ninja gets fooled by monkey', function () {
+        expect(ninja.versus(monkey)).toBe('monkey') 
 
-  it('ninja gets fooled by monkey', function () {
-    ninja = new Ninja
-    pirate = new Pirate
-    expect(ninja.versus(monkey)).toBe('monkey') 
+      });
 
-  });
+      it('pirate skewers monkey', function() {
+        expect(pirate.versus(monkey)).toBe('pirate')
+      });
+
+      it('pirate gets chopped by ninja', function () {
+        expect(pirate.versus(ninja)).toBe('ninja')
+
+      });
 
 
+      it('two monkeys draw', function () {
+        expect(monkey.versus(monkey)).toBe('draw')
+
+      });
+
+      it('two ninjas draw', function () {
+        expect(ninja.versus(ninja)).toBe('draw')
+
+      });
+
+      it('two pirates draw', function () {
+        expect(pirate.versus(pirate)).toBe('draw')
+
+      });
 
 
   });
