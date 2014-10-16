@@ -1,4 +1,4 @@
-describe('Rock Paper Scissors', function () {
+describe('Monkey Ninja Pirate', function () {
 
 
   describe('warriors', function () {
@@ -28,27 +28,37 @@ describe('Rock Paper Scissors', function () {
 
   describe('Rules of MNP', function () {
 
+    beforeEach(function () {
+          rules = new Rules
+
+    });
+
       it('monkey fools ninja', function () {
 
-        rules = new Rules
         expect(rules.championOf(monkey, ninja)).toBe('monkey')
 
       });
 
       it('ninja karate chops pirate', function () {
 
-        rules = new Rules
         expect(rules.championOf(ninja, pirate)).toBe('ninja')
         
       });
 
       it('pirate skewers monkey', function () {
 
-        rules = new Rules
         expect(rules.championOf(pirate, monkey)).toBe('pirate') 
 
+      });
+
+      it('ninja is fooled by monkey', function () {
+
+        expect(rules.championOf(ninja, monkey)).toBe('monkey')
 
       });
+
+
+
 
 
 
