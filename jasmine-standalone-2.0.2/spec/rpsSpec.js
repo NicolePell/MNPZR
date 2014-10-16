@@ -33,31 +33,33 @@ describe('Monkey Ninja Pirate', function () {
 
     });
 
-      it('monkey fools ninja', function () {
+ 
 
-        expect(rules.championOf(monkey, ninja)).toBe('monkey')
+  it('monkey fools ninja', function () {
+    monkey = new Monkey
+    expect(monkey.versus(ninja)).toBe('monkey')
+  });
 
-      });
+  it('monkey is skewered by pirate', function () {
+    monkey = new Monkey
+    pirate = new Pirate
+    expect(monkey.versus(pirate)).toBe('pirate')
+  });
 
-      it('ninja karate chops pirate', function () {
+  it('ninja karate chops pirate', function () {
 
-        expect(rules.championOf(ninja, pirate)).toBe('ninja')
-        
-      });
+    ninja = new Ninja
+    pirate = new Pirate
+    expect(ninja.versus(pirate)).toBe('ninja')
 
-      it('pirate skewers monkey', function () {
+  });
 
-        expect(rules.championOf(pirate, monkey)).toBe('pirate') 
+  it('ninja gets fooled by monkey', function () {
+    ninja = new Ninja
+    pirate = new Pirate
+    expect(ninja.versus(monkey)).toBe('monkey') 
 
-      });
-
-      it('ninja is fooled by monkey', function () {
-
-        expect(rules.championOf(ninja, monkey)).toBe('monkey')
-
-      });
-
-
+  });
 
 
 
