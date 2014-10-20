@@ -6,12 +6,85 @@ describe('Game', function () {
 
   it('can add players', function () {
 
+
     player1 = new Player
     player2 = new Player
-    game = new Game(player1, player1)
-    expect(game.players).toEqual([player1, player1])
+
+    game = new Game(player1, player2)
+    expect(game.players).toEqual([player1, player2])
 
   });
+
+  it('knows monkey beats ninja', function () {
+
+    monkey = new Monkey
+    ninja = new Ninja
+    game = new Game
+    player1 = new Player
+    player2 = new Player
+
+    player1.chooses(monkey)
+    player2.chooses(ninja)
+    expect(game.winner(player1, player2)).toEqual('player1')
+
+  });
+
+  it('knows ninja beats pirate', function () {
+
+    pirate = new Pirate
+    ninja = new Ninja
+    game = new Game
+    player1 = new Player
+    player2 = new Player
+
+    player1.chooses(ninja)
+    player2.chooses(pirate)
+    expect(game.winner(player1, player2)).toEqual('player1')
+
+  });
+
+  it('knows pirate beats monkey', function () {
+
+    pirate = new Pirate
+    ninja = new Ninja
+    game = new Game
+    player1 = new Player
+    player2 = new Player
+
+    player1.chooses(pirate)
+    player2.chooses(monkey)
+    expect(game.winner(player1, player2)).toEqual('player1')
+
+  });
+
+  it('knows which player to return', function () {
+
+    monkey = new Monkey
+    ninja = new Ninja
+    game = new Game
+    player1 = new Player
+    player2 = new Player
+
+    player1.chooses(ninja)
+    player2.chooses(monkey)
+    expect(game.winner(player1, player2)).toEqual('player2')
+
+  });
+
+  it('knows a draw', function () {
+
+    monkey = new Monkey
+    game = new Game
+    player1 = new Player
+    player2 = new Player
+
+    player1.chooses(monkey)
+    player2.chooses(monkey)
+    expect(game.winner(player1, player2)).toEqual('draw')
+
+  });
+
+  
 
  });
 
@@ -75,19 +148,23 @@ describe('Pirate', function () {
 
 });
 
+describe('Player', function () {
 
+  beforeEach(function () {
 
+    player = new Player
 
+  });
 
+  it('can choose a warrior', function () {
 
+    monkey = new Monkey
 
+    player.chooses(monkey)
+    expect(player.choice).toEqual([monkey])
 
+  });
 
-
-
-
-
-
-
+});
 
 
