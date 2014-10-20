@@ -1,38 +1,29 @@
-function Monkey () {
+function Game (player1, player2) {
 
-this.type = 'monkey'
-
-	Monkey.prototype.versus = function(warrior) {
-	  if (warrior.type === 'ninja') return 'monkey'
-	  else if(warrior.type === 'pirate') return 'pirate'
-	  else return 'draw'
-	};
+    this.players = [player1, player2]
 
 };
+
+function Player () {}
+
+function Monkey () {
+
+  this.type = 'monkey'
+  this.beats = 'ninja'
+}
+
+
+
 
 function Ninja () {
 
-this.type = 'ninja'
-
-	Ninja.prototype.versus = function(warrior) {
-	  if (warrior.type === 'monkey') return 'monkey'
-	  else if(warrior.type === 'pirate') return 'ninja'
-	  else return 'draw'
-	};
-
-};
+  this.type = 'ninja'
+  this.beats = 'pirate'
+}
 
 function Pirate () {
 
-this.type = 'pirate'
+  this.type = 'pirate'
+  this.beats = 'monkey'
 
-	Pirate.prototype.versus = function(warrior) {
-	if (warrior.type === 'monkey') return 'pirate'	
-	else if(warrior.type == 'ninja') return 'ninja'
-	else return 'draw'
-	};
-
-};
-
-
-function Rules () {};
+}

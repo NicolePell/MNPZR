@@ -1,86 +1,93 @@
-describe('Monkey Ninja Pirate', function () {
+describe('Game', function () {
 
+  var player1
+  var player2
+  var game
 
-  describe('warriors', function () {
+  it('can add players', function () {
 
-      it('monkey', function () {
-            
-  	  	monkey = new Monkey
-      	expect(monkey.type).toEqual('monkey')
-
-      });
-
-      it('ninja', function () {
-
-      	ninja = new Ninja
-      	expect(ninja.type).toEqual('ninja')
-      
-      });
-
-      it('pirate', function () {
-
-        pirate = new Pirate
-        expect(pirate.type).toEqual('pirate')
-
-      });
-     
-  });
-
-  describe('Rules of MNP', function () {
-
-    beforeEach(function () {
-          rules = new Rules
-          monkey = new Monkey
-          pirate = new Pirate
-          ninja = new Ninja;
-
-    });
-
-
-      it('monkey fools ninja', function () {
-        expect(monkey.versus(ninja)).toBe('monkey')
-      });
-
-      it('monkey is skewered by pirate', function () {
-        expect(monkey.versus(pirate)).toBe('pirate')
-      });
-
-      it('ninja karate chops pirate', function () {
-        expect(ninja.versus(pirate)).toBe('ninja')
-
-      });
-
-      it('ninja gets fooled by monkey', function () {
-        expect(ninja.versus(monkey)).toBe('monkey') 
-
-      });
-
-      it('pirate skewers monkey', function() {
-        expect(pirate.versus(monkey)).toBe('pirate')
-      });
-
-      it('pirate gets chopped by ninja', function () {
-        expect(pirate.versus(ninja)).toBe('ninja')
-
-      });
-
-
-      it('two monkeys draw', function () {
-        expect(monkey.versus(monkey)).toBe('draw')
-
-      });
-
-      it('two ninjas draw', function () {
-        expect(ninja.versus(ninja)).toBe('draw')
-
-      });
-
-      it('two pirates draw', function () {
-        expect(pirate.versus(pirate)).toBe('draw')
-
-      });
-
+    player1 = new Player
+    player2 = new Player
+    game = new Game(player1, player1)
+    expect(game.players).toEqual([player1, player1])
 
   });
-  
+
+ });
+
+describe('Monkey', function () {
+
+  var monkey
+
+  it('has a type "monkey"', function () {
+
+    monkey = new Monkey
+    expect(monkey.type).toEqual('monkey')
+
+  });
+
+  it('fools ninja' , function () {
+
+    ninja = new Ninja
+    expect(monkey.beats).toEqual('ninja')
+
+  });
+
 });
+
+describe('Ninja', function () {
+
+  var ninja
+
+  it('has a type "ninja"', function () {
+
+    ninja = new Ninja
+    expect(ninja.type).toEqual('ninja')
+
+  });
+
+  it('beats pirate', function () {
+
+    pirate = new Pirate
+    expect(ninja.beats).toEqual('pirate')
+
+  });
+    
+});
+
+describe('Pirate', function () {
+
+  var pirate
+
+  it('has a type "pirate"', function () {
+
+    pirate = new Pirate
+    expect(pirate.type).toEqual('pirate')
+
+  });
+
+  it('beats monkey', function () {
+
+    monkey = new Monkey
+    expect(pirate.beats).toEqual('monkey')
+
+  });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
