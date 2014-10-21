@@ -29,6 +29,7 @@ body {
   padding-bottom: 7%;
 }
 
+
 .warriors img {
   width: 19%;
   height: 30%;
@@ -36,7 +37,7 @@ body {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border: solid black;
-
+  
 }
 
 #result {

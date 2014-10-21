@@ -22,38 +22,38 @@ describe('Game', function () {
 
 
   it('knows monkey beats ninja', function () {
-    expect(game.winner(monkey, ninja)).toEqual('You win!')
+    expect(game.winner(monkey, ninja)).toEqual('Monkey fools ninja! You win!')
 
   });
 
   it('knows ninja beats pirate', function () {
-    expect(game.winner(ninja, pirate)).toEqual('You win!')
+    expect(game.winner(ninja, pirate)).toEqual('Ninja karate chops pirate! You win!')
 
   });
 
   it('knows pirate beats monkey', function () {
-    expect(game.winner(pirate, monkey)).toEqual('You win!')
+    expect(game.winner(pirate, monkey)).toEqual('Pirate skewers monkey! You win!')
 
   });
 
   it('knows zombie savages monkey', function () {
-    expect(game.winner(zombie, monkey)).toEqual('You win!')
+    expect(game.winner(zombie, monkey)).toEqual('Zombie savages monkey! You win!')
   });
 
   it('knows robot chokes ninja', function () {
-    expect(game.winner(robot, ninja)).toEqual('You win!')
+    expect(game.winner(robot, ninja)).toEqual('Robot chokes ninja! You win!')
   });
 
   it('monkey unplugs robot', function () {
-    expect(game.winner(monkey, robot)).toEqual('You win!')
+    expect(game.winner(monkey, robot)).toEqual('Monkey unplugs robot! You win!')
   });
 
   it('robot is unplugged by monkey', function(){
-    expect(game.winner(robot, monkey)).toEqual('Computer wins!')
+    expect(game.winner(robot, monkey)).toEqual('Monkey unplugs robot! Computer wins!')
   });
 
   it('knows a draw', function () {
-    expect(game.winner(monkey, monkey)).toEqual('Draw')
+    expect(game.winner(monkey, monkey)).toEqual("You both chose monkey. It's a draw!")
 
   });
 });
