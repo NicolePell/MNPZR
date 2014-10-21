@@ -1,5 +1,12 @@
 describe('Game', function () {
 
+
+    // Monkey (fools ninja, unplugs robot)
+    // Robot (chokes ninja, crushes zombie)
+    // Pirate (drowns robot, skewers monkey)
+    // Ninja (karate chops pirate, decapitates zombie)
+    // Zombie (eats pirate, savages monkey)
+
   var game
 
   beforeEach(function() {
@@ -8,6 +15,8 @@ describe('Game', function () {
     monkey = new Monkey
     ninja = new Ninja
     pirate = new Pirate
+    zombie = new Zombie
+    robot = new Robot
 
   });
 
@@ -25,6 +34,22 @@ describe('Game', function () {
   it('knows pirate beats monkey', function () {
     expect(game.winner(pirate, monkey)).toEqual('You win!')
 
+  });
+
+  it('knows zombie savages monkey', function () {
+    expect(game.winner(zombie, monkey)).toEqual('You win!')
+  });
+
+  it('knows robot chokes ninja', function () {
+    expect(game.winner(robot, ninja)).toEqual('You win!')
+  });
+
+  it('monkey unplugs robot', function () {
+    expect(game.winner(monkey, robot)).toEqual('You win!')
+  });
+
+  it('robot is unplugged by monkey', function(){
+    expect(game.winner(robot, monkey)).toEqual('Computer wins!')
   });
 
   it('knows a draw', function () {
