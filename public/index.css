@@ -23,23 +23,23 @@ body {
   background-color: #ff6600;
 }
 
-#warriors {
+.warriors {
+  width: 100%;
   padding-top: 12.5%;
   padding-bottom: 7%;
 }
 
-#warriors img {
-  width: 350px;
-  height: 350px;
-  border-radius: 175px;
-  -webkit-border-radius: 175px;
-  -moz-border-radius: 175px;
-  border: solid black
+.warriors img {
+  width: 19%;
+  height: 30%;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border: solid black;
+
 }
 
 #result {
 color: black;
 font-size: 600%;
-
-
 }

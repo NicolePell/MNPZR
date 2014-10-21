@@ -1,4 +1,4 @@
-$('#warriors img').on('click', function () {
+$('.warriors img').on('click', function () {
 
 var pick = $(this).data("pick");
 var warrior = warriorsHash[pick]
