@@ -1,0 +1,49 @@
+/*==============================================================
+Import Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+/*==============================================================*/
+
+h1 {
+  height: 7%;
+  width: 100%;
+  padding-top: 2%;
+  background-color: gray;
+  color: white;
+  opacity: .7;
+  font-family:"Poiret One";
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+
+#warriors {
+  margin: 6%;
+  width: 100%;
+}
+
+#warriors img:hover {
+  opacity: 1;
+}
+
+#monkey {
+  height: 30%;
+  width: 30%;
+  opacity: .5;
+
+}
+
+#ninja {
+  height: 30%;
+  width: 30%;
+  opacity: .5;
+
+}
+
+#pirate{
+  height: 30%;
+  width: 30%;
+  opacity: .5;
+
+}
