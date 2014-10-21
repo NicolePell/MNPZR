@@ -8,9 +8,9 @@ $("#result").html(game.winner(warrior, randomChoice(gameChoice)))
 
 })
 
-warriorsHash = {monkey : new Monkey, ninja: new Ninja, pirate: new Pirate}
+warriorsHash = {monkey : new Monkey, ninja: new Ninja, pirate: new Pirate, zombie: new Zombie, robot: new Robot}
 
-var gameChoice = [new Monkey, new Ninja, new Pirate]
+var gameChoice = [new Monkey, new Ninja, new Pirate, new Zombie, new Robot]
 
 randomChoice = function(gameChoice) {
 return gameChoice[Math.floor(Math.random()*gameChoice.length)];

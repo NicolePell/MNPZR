@@ -1,37 +1,45 @@
-/*==============================================================
-Import Fonts*/
-@import url(http://fonts.googleapis.com/css?family=Poiret+One);
-/*==============================================================*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  height: 8%;
+  width: 100%;
+  padding-bottom: 3%;
+}
 
 h1 {
-  height: 7%;
-  width: 100%;
   padding-top: 2%;
-  background-color: gray;
   color: white;
-  opacity: .7;
-  font-family:"Poiret One";
+  font-size: 500%;
+  font-family: 'YouMurderer BB';
   text-align: center;
-}
-
-body {
-  background-color: black;
-}
-
-#warriors2 img {
-
-  margin-left:auto;
-  margin-right:auto;
   
 }
 
+body {
+  background-color: #ff6600;
+}
+
+#warriors {
+  padding-top: 12.5%;
+  padding-bottom: 7%;
+}
+
 #warriors img {
-  width: 30%;
-  height: 30%;
-  opacity: .5;
+  width: 350px;
+  height: 350px;
+  border-radius: 175px;
+  -webkit-border-radius: 175px;
+  -moz-border-radius: 175px;
+  border: solid black
 }
 
-#warriors img:hover {
-  opacity: 1;
-}
+#result {
+color: black;
+font-size: 600%;
 
+
+}
