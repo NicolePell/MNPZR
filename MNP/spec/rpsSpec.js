@@ -56,6 +56,12 @@ describe('Game', function () {
     expect(game.winner(monkey, monkey)).toEqual("You both chose monkey. It's a draw!")
 
   });
+
+  it('knows that a harris beats briggsy', function () {
+    expect(game.winner(harris, briggsy)).toEqual()
+
+
+  });
 });
 
 describe('Monkey', function () {
