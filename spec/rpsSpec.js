@@ -1,6 +1,5 @@
 describe('Game', function () {
 
-
     // Monkey (fools ninja, unplugs robot)
     // Robot (chokes ninja, crushes zombie)
     // Pirate (drowns robot, skewers monkey)
@@ -56,12 +55,6 @@ describe('Game', function () {
     expect(game.winner(monkey, monkey)).toEqual("You both chose monkey. It's a draw!")
 
   });
-
-  it('knows that a harris beats briggsy', function () {
-    expect(game.winner(harris, briggsy)).toEqual()
-
-
-  });
 });
 
 describe('Monkey', function () {
@@ -112,7 +105,7 @@ describe('Ninja', function () {
     expect(ninja.beats).toEqual('pirate')
 
   });
-    
+
 });
 
 describe('Pirate', function () {

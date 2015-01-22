@@ -1,6 +1,4 @@
-function Game() {
-
-};
+function Game() {};
 
 Game.prototype.winner = function(choice1, choice2) {
   if(choice1.beats === choice2.type) return choice1.beatsMessage + ' You win!';
