@@ -6,7 +6,7 @@ Win, die or draw, will you take your chances?
 
 If your feeling daring go here to try it out:
 
-![alt tag](https://raw.github.com/schlap/mnp/master/public/images/screen-shot.png)
+![alt tag](https://raw.github.com/schlap/MNPZR---Javascript/master/public/images/screen-shot.png)
 
 ## The Rules
 
