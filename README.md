@@ -4,7 +4,7 @@ This is a fully tested alternative to the old school classic "Rock Paper Scissor
 Play against the computer, choose a warrior and the computer will choose one to match you.
 Win, die or draw, will you take your chances?
 
-If your feeling daring go here to try it out:
+If you're feeling daring go here to try it out:
 
 ![alt tag](https://raw.github.com/schlap/rps-javascript/development/public/images/screen-shot.png)
 

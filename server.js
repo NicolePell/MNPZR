@@ -9,7 +9,7 @@ app.get('/', function (req, res){
   res.render('index')
 });
 
-var port = 3000
+var port = process.env.PORT || 3000 
 if(app.listen(port)){
   console.log('Listening on port: ' + port);
 };
