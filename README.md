@@ -6,7 +6,7 @@ Win, die or draw, will you take your chances?
 
 If your feeling daring go here to try it out:
 
-![alt tag](https://raw.github.com/schlap/rps-javascript/master/public/images/screen-shot.png)
+![alt tag](https://raw.github.com/schlap/rps-javascript/development/public/images/screen-shot.png)
 
 ## The Rules
 
@@ -30,7 +30,3 @@ If your feeling daring go here to try it out:
 ## Learning Outcomes
 
 ## To Run the Jasmine Tests
-
-Run `$ git clone git@github.com:Schlap/MNPZR---Javascript.git
-Then `$ cd MNPZR---Javascript
-And finally `$ open SpecRunner.html
