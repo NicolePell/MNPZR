@@ -1,4 +1,14 @@
-The alternative rock paper scissors game written in Javascript. Weapons in this game are:
+# Makers Academy Challenge - Monkey Ninja Pirate Zombie Robot
+
+This is a fully tested alternative to the old school classic "Rock Paper Scissors" game.
+Play against the computer, choose a warrior and the computer will choose one to match you.
+Win, die or draw, will you take your chances?
+
+If your feeling daring go here to try it out:
+
+![alt tag](https://raw.github.com/schlap/mnp/master/public/images/screen-shot.png)
+
+## The Rules
 
 - Monkey (fools ninja, unplugs robot)  
 - Robot (chokes ninja, crushes zombie)
@@ -6,11 +16,21 @@ The alternative rock paper scissors game written in Javascript. Weapons in this 
 - Ninja (karate chops pirate, decapitates zombie)
 - Zombie (eats pirate, savages monkey)
 
+## Tools
 
-Rules: [a link](http://markarayner.com/blog/archives/1613)
+- Javascript
+- Jasmine
+- Jquery
+- HTML
+- CSS
+- Node
+- Embedded Javascript
+- Git/Heroku
 
+## Learning Outcomes
 
+## To Run the Jasmine Tests
 
-
-paper beats rock beats scissors beats paper
-monkey beats ninja beats pirate beats monkey
+Run `$ git clone git@github.com:Schlap/MNPZR---Javascript.git
+Then `$ cd MNPZR---Javascript
+And finally `$ open SpecRunner.html
